@@ -1,0 +1,16 @@
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Dwight Book Recommendor</title>
+    </head>
+    <body>
+      <h1>Your Results!</h1>
+      <div class="book-list">
+        <ul>
+          {% for x in books %}
+            <li>{{author.name}} - {{bar.code}} - {{title.ofbook}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </body>
+</html>

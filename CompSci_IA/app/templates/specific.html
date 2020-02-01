@@ -1,0 +1,18 @@
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Dwight Book Recommendor</title>
+    </head>
+    <body>
+      <h1>Your Results!</h1>
+      <div class="book-list">
+          {% for object in y %}
+            <p>The Author is: {{object.Author}} <br>
+        The Title is: {{object["Title/Subtitle"]}} <br>
+        The Category is: {{object.Category}}<br>
+        The ISBN is: {{object.ISBN}}</p>
+        <br>
+        {% endfor %}
+      </div>
+    </body>
+</html>
